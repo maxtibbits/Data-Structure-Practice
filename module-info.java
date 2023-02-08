@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author maxti
+ *
+ */
+module DataStructures {
+}
