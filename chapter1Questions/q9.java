@@ -6,6 +6,10 @@ package chapter1Questions;
  * Assume you have a method isSubstring  which checks if one word is a substring
  * of another. Given two strings, s1 and s2, write code to check if s2 is a rotation
  * of s1 using only one call to isSubstring
+ * 
+ * Author's Note: I misunderstood this question and actually programmed isSubstring haha!
+ *				  I'll be sure to read questions more carefully in the future! 
+ *
  */
 public class q9 {
 	
