@@ -1,4 +1,4 @@
-package chapter1Questions;
+package chapter01Questions;
 
 /*Question 1.4
  * 
