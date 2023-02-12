@@ -28,6 +28,7 @@ public class HashTableArray<T> {
 		
 	}
 	
+	@SuppressWarnings("unchecked")
 	public T get (int key) {
 		T value = null;
 		int HashIndex = getHash(key);
@@ -35,7 +36,7 @@ public class HashTableArray<T> {
 		
 		while(storedEntry != null) {
 			if(storedEntry.getKey() == key) {
-				value = (T) storedEntry.getValue();
+				value = (T)storedEntry.getValue();
 				break;
 			}
 			storedEntry = storedEntry.next;
