@@ -159,16 +159,16 @@ public class q5 {
 			return output;
 		}
 		
-		private Node peek() {
-			return this.top;
-		}
+//		private Node peek() {
+//			return this.top;
+//		}
 		
-		private boolean isEmpty() {
-			if (this.top == null) {
-				return true;
-			}
-			return false;
-		}
+//		private boolean isEmpty() {
+//			if (this.top == null) {
+//				return true;
+//			}
+//			return false;
+//		}
 		
 		private static class Node{
 			int value;
@@ -182,9 +182,9 @@ public class q5 {
 				return this.value;
 			}
 			
-			public void setValue(int value) {
-				this.value = value;
-			}
+//			public void setValue(int value) {
+//				this.value = value;
+//			}
 			
 			public void setNext(Node next) {
 				this.next = next;
