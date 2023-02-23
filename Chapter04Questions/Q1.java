@@ -75,16 +75,16 @@ public class Q1 {
 		}
 		
 		//Find edge by the vertices on it, direction matters
-		private Edge findEdge(Vertex v1, Vertex v2) {
-			for (Edge each : edgeList)
-			{
-				if (each.x.equals(v1) && each.y.equals(v2))
-				{
-					return each;
-				}
-			}
-			return null;
-		}
+//		private Edge findEdge(Vertex v1, Vertex v2) {
+//			for (Edge each : edgeList)
+//			{
+//				if (each.x.equals(v1) && each.y.equals(v2))
+//				{
+//					return each;
+//				}
+//			}
+//			return null;
+//		}
 		
 		private Edge findEdge(T x, T y)
 		{
