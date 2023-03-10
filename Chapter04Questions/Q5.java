@@ -21,6 +21,7 @@ public class Q5 {
 	}
 	
 	
+	@SuppressWarnings("unused")
 	private class BinaryTree{
 	
 		Node head;
@@ -37,13 +38,23 @@ public class Q5 {
 			
 		}
 		
-		private boolean checkBalance() {
-			if (this.head != null) {
-				return this.head.checkBalance();
-			}
-			else {
+		private boolean checkBST(Node x) {
+			return checkBST(x, null, null);
+		}
+		
+		private boolean checkBST(Node x, Integer min, Integer max) {
+			if (x == null) {
 				return true;
 			}
+			if((min != null && x.getValue() <= min) || (max != null && x.getValue() > max)) {
+				return false;
+			}
+			
+			if (!checkBST(x.getLeft(), min, x.getValue()) || !checkBST(x.getRight(), x.getValue(), max)) {
+				return false;
+			}
+			
+			return true;
 		}
 		
 		private class Node{
@@ -72,14 +83,7 @@ public class Q5 {
 					}
 				}
 			}
-			
-			private boolean checkBalance() {
-				boolean isBalanced = false;
-				
-				
-				return isBalanced;
-			}
-			
+						
 			public Node getLeft() {
 				return left;
 			}
